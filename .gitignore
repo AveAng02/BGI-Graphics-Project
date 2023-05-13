@@ -49,3 +49,12 @@ Temporary Items
 *.db
 *.opendb
 *.ipch
+*.obj
+*.tlog
+*.pdb
+*.idb
+*.manifest
+*.testlog
+*.db-wal
+*.db-shm
+.vs/game/v16/.suo

@@ -86,6 +86,9 @@
     <ClCompile Include="examples\Sandbox.cpp">
       <Filter>Main</Filter>
     </ClCompile>
+    <ClCompile Include="examples\Tetris.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bgi\dibutil.h">
