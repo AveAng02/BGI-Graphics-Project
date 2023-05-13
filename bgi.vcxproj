@@ -41,7 +41,9 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="examples\Tetris.cpp" />
+    <ClCompile Include="examples\Tetris.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="src\assets.cpp" />
     <ClCompile Include="src\fx.cpp" />
     <ClCompile Include="src\leaderboard.cpp" />
@@ -70,6 +72,7 @@
     <ProjectGuid>{B0A1AF87-F642-456A-9C64-9C7ABBDF9EC1}</ProjectGuid>
     <RootNamespace>bgi</RootNamespace>
     <ProjectName>Game</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -102,7 +105,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <AdditionalIncludeDirectories>C:\Users\navon\Documents\GitHub\BGI-Graphics-Project\include;C:\Users\navon\Documents\GitHub\BGI-Graphics-Project\bgi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\ZDrive_1\Github\BGI-Graphics-Project\bgi;C:\ZDrive_1\Github\BGI-Graphics-Project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>

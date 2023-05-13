@@ -1,16 +1,2 @@
 ﻿  Tetris.cpp
-  assets.cpp
-C:\ZDrive_1\Github\BGI-Graphics-Project\src\assets.cpp(60,10): fatal error C1083: Cannot open include file: 'assets.h': No such file or directory
-  fx.cpp
-C:\ZDrive_1\Github\BGI-Graphics-Project\src\fx.cpp(6,10): fatal error C1083: Cannot open include file: 'graphics.h': No such file or directory
-  leaderboard.cpp
-C:\ZDrive_1\Github\BGI-Graphics-Project\src\leaderboard.cpp(3,10): fatal error C1083: Cannot open include file: 'leaderboard.h': No such file or directory
-  matrix.cpp
-C:\ZDrive_1\Github\BGI-Graphics-Project\src\matrix.cpp(2,10): fatal error C1083: Cannot open include file: 'matrix.h': No such file or directory
-  physics.cpp
-C:\ZDrive_1\Github\BGI-Graphics-Project\src\physics.cpp(2,10): fatal error C1083: Cannot open include file: 'physics.h': No such file or directory
-  quadtree.cpp
-C:\ZDrive_1\Github\BGI-Graphics-Project\src\quadtree.cpp(3,10): fatal error C1083: Cannot open include file: 'quadtree.h': No such file or directory
-  vector.cpp
-C:\ZDrive_1\Github\BGI-Graphics-Project\src\vector.cpp(2,10): fatal error C1083: Cannot open include file: 'primitives.h': No such file or directory
-  Generating Code...
+  bgi.vcxproj -> C:\ZDrive_1\Github\BGI-Graphics-Project\Debug\Game.exe

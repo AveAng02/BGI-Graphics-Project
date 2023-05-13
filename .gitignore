@@ -58,3 +58,8 @@ Temporary Items
 *.db-wal
 *.db-shm
 .vs/game/v16/.suo
+*.exe
+*.ilk
+*.log
+*.log
+*.pdf
