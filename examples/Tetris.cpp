@@ -8,29 +8,8 @@
 
 
 
-void draw_rect(primitives::Rectangle rect)
-{
-	rectangle(rect.tL.x, rect.tL.y, rect.bR.x, rect.bR.y);
-}
-
-void move_rect(primitives::Rectangle rect, int x, int y)
-{
-	rectangle(rect.tL.x + x, rect.tL.y + y, rect.bR.x + x, rect.bR.y + y);
-}
-
-
 int main()
 {
-	/*
-	while(true)
-		take input
-
-		if(time < time_window)
-			update physics 
-			Apply game logic
-			update canvas
-	*/
-
 	initwindow(1440, 811, "Tetris");
 
 	int move = 0;
@@ -49,12 +28,12 @@ int main()
 	int x_pos = 0;
 	int y_pos = 0;
 
-	draw_rect(rect1);
+	drawShape(rect1);
 
 	// Main game loop
 	while (true)
 	{
-		move_rect(rect1, x_pos, y_pos);
+		moveShape(rect1, x_pos, y_pos);
 
 		move = getch();
 

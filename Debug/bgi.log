@@ -1,2 +1,2 @@
-﻿  Tetris.cpp
+﻿LINK : warning LNK4031: no subsystem specified; CONSOLE assumed
   bgi.vcxproj -> C:\ZDrive_1\Github\BGI-Graphics-Project\Debug\Game.exe
