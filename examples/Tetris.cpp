@@ -1,10 +1,10 @@
 
 
+#include <iostream>
 #include <graphics.h>
-#include <primitives.h>
-
-
-#define SPEED 5
+#include <Primitives.h>
+#include <Physics.h>
+#include <Pieces.h>
 
 
 
@@ -14,60 +14,53 @@ int main()
 
 	int move = 0;
 
-	primitives::Rectangle rect1;
-
 	int centre_x = getmaxx() / 2;
 	int centre_y = getmaxy() / 2;
 
-	rect1.tL.x = centre_x - 50;
-	rect1.tL.y = centre_y - 50;
-
-	rect1.bR.x = centre_x + 50;
-	rect1.bR.y = centre_y + 50;
+	Game::Pieces p1(2, centre_x, centre_y);
 
 	int x_pos = 0;
 	int y_pos = 0;
 
-	drawShape(rect1);
+	p1.draw_piece();
 
 	// Main game loop
 	while (true)
 	{
-		moveShape(rect1, x_pos, y_pos);
+		p1.move_piece(x_pos, y_pos);
 
 		move = getch();
 
 		if (move == 75)
 		{
 			// move right
-			x_pos -= SPEED;
+			x_pos -= 5;
 		}
 
 		if (move == 77)
 		{
 			// move left
-			x_pos += SPEED;
+			x_pos += 5;
 		}
 
 		if (move == 72)
 		{
 			// move up
-			y_pos -= SPEED;
+			y_pos -= 5;
 		}
 
 		if (move == 80)
 		{
 			// move down
-			y_pos += SPEED;
+			y_pos += 5;
 		}
-
 
 		cleardevice();
 	}
+	
 
 
 
-	getch();
 	return 0;
 }
 
