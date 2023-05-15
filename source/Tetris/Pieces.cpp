@@ -7,6 +7,9 @@ namespace Game
 	{
 		Rectangle rect;
 		
+		rect.width = 10;
+		rect.height = 10;
+
 		switch (seed)
 		{
 		case 1:

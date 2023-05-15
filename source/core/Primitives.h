@@ -12,11 +12,11 @@ namespace Game
 {
 	struct Point
 	{
-		int x;
-		int y;
+		float x;
+		float y;
 
 		Point() : x(0), y(0) {}
-		Point(const int &x_, const int &y_) : x(x_), y(y_) {}
+		Point(const float&x_, const float&y_) : x(x_), y(y_) {}
 	};
 
 	typedef struct
@@ -36,8 +36,9 @@ namespace Game
 		Point tL;
 		Point bR;
 		Point center; // mid point of the diagonal
-		int width;
-		int height;
+		float width;
+		float height;
+
 	} Rectangle;
 
 	inline Point midPoint(const Point &start, const Point &end)

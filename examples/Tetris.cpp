@@ -1,5 +1,4 @@
 
-
 #include <iostream>
 #include <graphics.h>
 #include <Primitives.h>
@@ -13,12 +12,11 @@ int main()
 	initwindow(1440, 811, "Tetris");
 
 	int move = 0;
-	int seed = std::rand() % 7 + 1;
+	int seed = 1;
 	int centre_x = getmaxx() / 2;
 	int centre_y = getmaxy() / 2;
 
 	Game::Pieces p1(seed, centre_x, centre_y);
-	std::cout << seed << "\n" << std::rand() % 7 + 1 << std::endl;
 
 	int x_pos = 0;
 	int y_pos = 0;
@@ -28,15 +26,13 @@ int main()
 	// Main game loop
 	while (true)
 	{
-		std::cout << seed << "\n" << std::rand() % 7 + 1 << std::endl;
-
 		p1.move_piece(x_pos, y_pos);
 
 		move = getch();
 
 		if (move == 13)
 		{
-			p1 = Game::Pieces(std::rand() % 7 + 1, centre_x, centre_y);
+			p1 = Game::Pieces((std::rand() % 7 + 1), centre_x, centre_y);
 
 			p1.draw_piece();
 		}
@@ -68,8 +64,6 @@ int main()
 		cleardevice();
 	}
 	
-
-
 
 	return 0;
 }
