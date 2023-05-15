@@ -25,8 +25,10 @@
     <ClCompile Include="examples\Tetris.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="source\core\Input.cpp" />
+    <ClCompile Include="source\core\Controls.cpp" />
+    <ClCompile Include="source\core\Primitives.cpp" />
     <ClCompile Include="source\core\Scene.cpp" />
+    <ClCompile Include="source\physics\Math.cpp" />
     <ClCompile Include="source\physics\Physics.cpp" />
     <ClCompile Include="source\Tetris\GameRules.cpp" />
     <ClCompile Include="source\Tetris\Pieces.cpp" />
@@ -38,9 +40,10 @@
     <ClInclude Include="bgi\winbgim.h" />
     <ClInclude Include="bgi\winbgitypes.h" />
     <ClInclude Include="source\core\Colors.h" />
-    <ClInclude Include="source\core\Input.h" />
+    <ClInclude Include="source\core\Controls.h" />
     <ClInclude Include="source\core\Primitives.h" />
     <ClInclude Include="source\core\Scene.h" />
+    <ClInclude Include="source\physics\Math.h" />
     <ClInclude Include="source\physics\Physics.h" />
     <ClInclude Include="source\Tetris\GameRules.h" />
     <ClInclude Include="source\Tetris\Pieces.h" />
@@ -49,7 +52,6 @@
     <ProjectGuid>{B0A1AF87-F642-456A-9C64-9C7ABBDF9EC1}</ProjectGuid>
     <RootNamespace>bgi</RootNamespace>
     <ProjectName>Game</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -87,6 +89,7 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\ZDrive_1\Github\BGI-Graphics-Project\bgi;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -96,13 +99,14 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <AdditionalIncludeDirectories>C:\Users\navon\Documents\GitHub\BGI-Graphics-Project\include;C:\Users\navon\Documents\GitHub\BGI-Graphics-Project\bgi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\ZDrive_1\Github\BGI-Graphics-Project\source\Tetris;C:\ZDrive_1\Github\BGI-Graphics-Project\source\physics;C:\ZDrive_1\Github\BGI-Graphics-Project\source\core;C:\Users\navon\Documents\GitHub\BGI-Graphics-Project\include;C:\Users\navon\Documents\GitHub\BGI-Graphics-Project\bgi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\ZDrive_1\Github\BGI-Graphics-Project\bgi;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

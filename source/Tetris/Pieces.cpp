@@ -16,18 +16,22 @@ namespace Game
 			// box
 			rect.tL = Point(x - 10, y - 10);
 			rect.bR = Point(x, y);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			rect.tL = Point(x - 10, y);
 			rect.bR = Point(x, y + 10);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			rect.tL = Point(x, y - 10);
 			rect.bR = Point(x + 10, y);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			rect.tL = Point(x, y);
 			rect.bR = Point(x + 10, y + 10);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			break;
@@ -36,18 +40,22 @@ namespace Game
 			// L
 			rect.tL = Point(x - 5, y - 5);
 			rect.bR = Point(x + 5, y + 5);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			rect.tL = Point(x + 5, y - 5);
 			rect.bR = Point(x + 15, y + 5);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			rect.tL = Point(x - 5, y - 15);
 			rect.bR = Point(x + 5, y + 5);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			rect.tL = Point(x - 5, y - 25);
 			rect.bR = Point(x + 5, y - 15);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			break;
@@ -56,18 +64,22 @@ namespace Game
 			// straight line
 			rect.tL = Point(x - 5, y - 10);
 			rect.bR = Point(x + 5, y);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			rect.tL = Point(x - 5, y - 20);
 			rect.bR = Point(x + 5, y - 10);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			rect.tL = Point(x - 5, y);
 			rect.bR = Point(x + 5, y + 10);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			rect.tL = Point(x - 5, y + 10);
 			rect.bR = Point(x + 5, y + 20);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			break;
@@ -76,18 +88,22 @@ namespace Game
 			// Reverse L
 			rect.tL = Point(x - 5, y - 5);
 			rect.bR = Point(x + 5, y + 5);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			rect.tL = Point(x - 15, y - 5);
 			rect.bR = Point(x - 5, y + 5);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			rect.tL = Point(x - 5, y - 15);
 			rect.bR = Point(x + 5, y + 5);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			rect.tL = Point(x - 5, y - 25);
 			rect.bR = Point(x + 5, y - 15);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			break;
@@ -96,18 +112,22 @@ namespace Game
 			// Z 
 			rect.tL = Point(x - 5, y);
 			rect.bR = Point(x + 5, y + 10);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			rect.tL = Point(x + 5, y);
 			rect.bR = Point(x + 15, y + 10);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			rect.tL = Point(x - 5, y - 10);
 			rect.bR = Point(x + 5, y);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			rect.tL = Point(x - 15, y - 10);
 			rect.bR = Point(x - 5, y);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			break;
@@ -116,18 +136,22 @@ namespace Game
 			// Inverse Z 
 			rect.tL = Point(x - 5, y);
 			rect.bR = Point(x + 5, y + 10);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			rect.tL = Point(x - 15, y);
 			rect.bR = Point(x - 5, y + 10);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			rect.tL = Point(x - 5, y - 10);
 			rect.bR = Point(x + 5, y);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			rect.tL = Point(x + 5, y - 10);
 			rect.bR = Point(x + 15, y);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			break;
@@ -135,18 +159,22 @@ namespace Game
 		case 7:
 			rect.tL = Point(x - 5, y - 15);
 			rect.bR = Point(x + 5, y - 5);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			rect.tL = Point(x - 5, y - 5);
 			rect.bR = Point(x + 5, y + 5);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			rect.tL = Point(x - 15, y - 5);
 			rect.bR = Point(x - 5, y + 5);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			rect.tL = Point(x + 5, y - 5);
 			rect.bR = Point(x + 15, y + 5);
+			calculate_centre(rect);
 			box_list.push_back(rect);
 
 			break;

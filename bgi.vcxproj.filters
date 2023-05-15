@@ -15,6 +15,24 @@
     <Filter Include="Main">
       <UniqueIdentifier>{e57f1840-e8b6-499a-8c01-f861592f4c0c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{1d939d09-e590-4a33-84b7-3a5343407dc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Physics">
+      <UniqueIdentifier>{ae46e433-b4fd-48d7-8deb-9c7d1cfd9133}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tetris">
+      <UniqueIdentifier>{09720471-3bc0-4ab2-bed3-0cb4c5304625}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{7ee373cc-19a8-42c6-bea3-08e17c5a8e4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Physics">
+      <UniqueIdentifier>{a86ac2ee-e4fb-481c-8441-2f0b937f5eb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tetris">
+      <UniqueIdentifier>{57a9a388-3a33-4010-a926-b82bbb41c0fa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="bgi\winbgi.cxx">
@@ -53,20 +71,26 @@
     <ClCompile Include="examples\Tetris.cpp">
       <Filter>Main</Filter>
     </ClCompile>
-    <ClCompile Include="source\core\Input.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="source\core\Controls.cpp">
+      <Filter>Source Files\Core</Filter>
     </ClCompile>
-    <ClCompile Include="source\physics\Physics.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="source\core\Primitives.cpp">
+      <Filter>Source Files\Core</Filter>
     </ClCompile>
     <ClCompile Include="source\core\Scene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="source\Tetris\Pieces.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Core</Filter>
     </ClCompile>
     <ClCompile Include="source\Tetris\GameRules.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Tetris</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tetris\Pieces.cpp">
+      <Filter>Source Files\Tetris</Filter>
+    </ClCompile>
+    <ClCompile Include="source\physics\Math.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="source\physics\Physics.cpp">
+      <Filter>Source Files\Physics</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -85,26 +109,29 @@
     <ClInclude Include="bgi\winbgitypes.h">
       <Filter>BGI</Filter>
     </ClInclude>
-    <ClInclude Include="source\core\Input.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="source\core\Colors.h">
+      <Filter>Header Files\Core</Filter>
     </ClInclude>
-    <ClInclude Include="source\physics\Physics.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\core\Scene.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="source\core\Controls.h">
+      <Filter>Header Files\Core</Filter>
     </ClInclude>
     <ClInclude Include="source\core\Primitives.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Core</Filter>
     </ClInclude>
-    <ClInclude Include="source\core\Colors.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\Tetris\Pieces.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="source\core\Scene.h">
+      <Filter>Header Files\Core</Filter>
     </ClInclude>
     <ClInclude Include="source\Tetris\GameRules.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Tetris</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Tetris\Pieces.h">
+      <Filter>Header Files\Tetris</Filter>
+    </ClInclude>
+    <ClInclude Include="source\physics\Math.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="source\physics\Physics.h">
+      <Filter>Header Files\Physics</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
