@@ -1,1 +1,5 @@
-﻿  bgi.vcxproj -> C:\ZDrive_1\Github\BGI-Graphics-Project\Debug\Game.exe
+﻿  Pieces.cpp
+C:\ZDrive_1\Github\BGI-Graphics-Project\source\Tetris\Pieces.cpp(161,21): warning C4018: '<': signed/unsigned mismatch
+C:\ZDrive_1\Github\BGI-Graphics-Project\source\Tetris\Pieces.cpp(169,21): warning C4018: '<': signed/unsigned mismatch
+  Tetris.cpp
+  bgi.vcxproj -> C:\ZDrive_1\Github\BGI-Graphics-Project\Debug\Game.exe
