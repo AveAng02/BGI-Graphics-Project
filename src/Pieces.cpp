@@ -10,6 +10,9 @@ namespace Game
 		rect.width = 10;
 		rect.height = 10;
 
+		centre.x = x;
+		centre.y = y;
+
 		switch (seed)
 		{
 		case 1:
@@ -239,6 +242,26 @@ namespace Game
 	std::vector<primitives::Rectangle> Pieces::get_box_list() const
 	{
 		return box_list;
+	}
+
+	void Pieces::reotatePieceClock()
+	{
+		int xTemp = 0, yTemp = 0;
+
+		for (int i = 0; i < box_list.size(); i++)
+		{
+			xTemp = box_list[i].center.x;
+			yTemp = box_list[i].center.y;
+
+			box_list[i].center.x = this->centre.x - (this->centre.y - yTemp);
+			box_list[i].center.y = this->centre.y + (this->centre.x - xTemp);
+
+			box_list[i].tL.x = box_list[i].center.x - (box_list[i].height / 2);
+			box_list[i].tL.y = box_list[i].center.y - (box_list[i].width / 2);
+
+			box_list[i].bR.x = box_list[i].center.x + (box_list[i].height / 2);
+			box_list[i].bR.y = box_list[i].center.y + (box_list[i].width / 2);
+		}
 	}
 }
 

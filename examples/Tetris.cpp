@@ -36,6 +36,11 @@ int main()
 			p1.draw_piece();
 		}
 
+		if (move == 82 || move == 114)
+		{
+			p1.reotatePieceClock();
+		}
+
 		if (move == 75)
 		{
 			// move right

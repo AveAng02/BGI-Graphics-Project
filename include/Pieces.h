@@ -58,6 +58,8 @@ namespace Game
 
 		std::vector<primitives::Rectangle> get_box_list() const;
 
+		void reotatePieceClock();
+
 	private:
 
 		void get_random_piece(int seed, int x, int y);

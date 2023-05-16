@@ -19,6 +19,8 @@ public:
 		rect.tL.y += y;
 		rect.bR.x += x;
 		rect.bR.y += y;
+		rect.center.x += x;
+		rect.center.y += y;
 
 		drawShape(rect);
 	}
