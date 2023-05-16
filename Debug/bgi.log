@@ -1,0 +1,99 @@
+﻿  bgiout.cxx
+  dibutil.cxx
+  drawing.cxx
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\drawing.cxx(819,9): warning C4101: 'tries': unreferenced local variable
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\drawing.cxx(859,10): warning C4101: 'answer': unreferenced local variable
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\drawing.cxx(1110,6): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  file.cxx
+  main.cxx
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\main.cxx(189,33): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\main.cxx(189,9): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\main.cxx(192,33): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\main.cxx(192,9): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\main.cxx(195,42): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\main.cxx(194,56): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\main.cxx(194,38): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\main.cxx(194,20): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\main.cxx(333,23): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\main.cxx(367,21): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\main.cxx(388,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\main.cxx(397,21): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  misc.cxx
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(595,39): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(595,46): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(595,53): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(595,60): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(595,67): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(595,74): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(595,81): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(595,88): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(596,39): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(596,46): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(596,53): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(596,60): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(596,67): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(596,74): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(596,81): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(596,88): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(597,39): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(597,46): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(597,53): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(597,60): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(597,67): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(597,74): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(597,81): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(597,88): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(598,39): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(598,46): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(598,53): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(598,60): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(598,67): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(598,74): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(598,81): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(598,88): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(599,39): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(599,46): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(599,53): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(599,60): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(599,67): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(599,74): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(599,81): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\misc.cxx(599,88): warning C4838: conversion from 'int' to 'unsigned short' requires a narrowing conversion
+  mouse.cxx
+  palette.cxx
+  text.cxx
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\text.cxx(348,19): warning C4018: '<': signed/unsigned mismatch
+  winbgi.cxx
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\winbgi.cxx(134,14): warning C4101: 'actual_color': unreferenced local variable
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\winbgi.cxx(133,9): warning C4101: 'bgi_color': unreferenced local variable
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\winbgi.cxx(494,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  winthread.cxx
+C:\ZDrive_1\Github\BGI-Graphics-Project\bgi\winthread.cxx(320,9): warning C4101: 'i': unreferenced local variable
+  Tetris.cpp
+  assets.cpp
+  Canvas.cpp
+  fx.cpp
+C:\ZDrive_1\Github\BGI-Graphics-Project\src\fx.cpp(15,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\ZDrive_1\Github\BGI-Graphics-Project\src\fx.cpp(24,29): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\ZDrive_1\Github\BGI-Graphics-Project\src\fx.cpp(25,29): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\ZDrive_1\Github\BGI-Graphics-Project\src\fx.cpp(35,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\ZDrive_1\Github\BGI-Graphics-Project\src\fx.cpp(87,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\ZDrive_1\Github\BGI-Graphics-Project\src\fx.cpp(97,29): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\ZDrive_1\Github\BGI-Graphics-Project\src\fx.cpp(98,29): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  leaderboard.cpp
+C:\ZDrive_1\Github\BGI-Graphics-Project\src\leaderboard.cpp(23,13): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\ZDrive_1\Github\BGI-Graphics-Project\src\leaderboard.cpp(36,7): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  matrix.cpp
+  physics.cpp
+C:\ZDrive_1\Github\BGI-Graphics-Project\include\vector.h(77,36): warning C4244: 'argument': conversion from 'const double' to 'int', possible loss of data
+C:\ZDrive_1\Github\BGI-Graphics-Project\include\vector.h(77,29): warning C4244: 'argument': conversion from 'const double' to 'int', possible loss of data
+  Pieces.cpp
+C:\ZDrive_1\Github\BGI-Graphics-Project\src\Pieces.cpp(220,21): warning C4018: '<': signed/unsigned mismatch
+C:\ZDrive_1\Github\BGI-Graphics-Project\src\Pieces.cpp(228,21): warning C4018: '<': signed/unsigned mismatch
+  vector.cpp
+C:\ZDrive_1\Github\BGI-Graphics-Project\include\vector.h(77,36): warning C4244: 'argument': conversion from 'const double' to 'int', possible loss of data
+C:\ZDrive_1\Github\BGI-Graphics-Project\include\vector.h(77,29): warning C4244: 'argument': conversion from 'const double' to 'int', possible loss of data
+  Generating Code...
+C:\ZDrive_1\Github\BGI-Graphics-Project\src\physics.cpp(155): warning C4715: 'primitives::getCollisionVector': not all control paths return a value
+LINK : warning LNK4031: no subsystem specified; CONSOLE assumed
+  bgi.vcxproj -> C:\ZDrive_1\Github\BGI-Graphics-Project\Debug\Game.exe

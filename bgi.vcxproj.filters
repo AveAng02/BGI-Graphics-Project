@@ -32,9 +32,6 @@
     <ClCompile Include="src\physics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\quadtree.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\vector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -86,6 +83,15 @@
     <ClCompile Include="examples\Sandbox.cpp">
       <Filter>Main</Filter>
     </ClCompile>
+    <ClCompile Include="examples\Tetris.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Pieces.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Canvas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bgi\dibutil.h">
@@ -121,13 +127,16 @@
     <ClInclude Include="include\primitives.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\quadtree.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\vector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\colors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Pieces.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Canvas.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
