@@ -232,6 +232,9 @@ namespace Game
 		{
 			Canvas::moveShape(box_list[i], x, y);
 		}
+
+		centre.x += x;
+		centre.y += y;
 	}
 
 	primitives::Point Pieces::get_centre() const

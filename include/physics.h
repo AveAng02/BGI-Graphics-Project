@@ -7,7 +7,9 @@
 #include <cmath>
 #include "primitives.h"
 #include "assets.h"
+#include <Canvas.h>
 #include <Pieces.h>
+
 
 namespace primitives
 {

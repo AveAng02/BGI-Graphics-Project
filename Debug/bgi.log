@@ -1,2 +1,3 @@
 ﻿  Tetris.cpp
+C:\ZDrive_1\Github\BGI-Graphics-Project\examples\Tetris.cpp(47,21): warning C4018: '<': signed/unsigned mismatch
   bgi.vcxproj -> C:\ZDrive_1\Github\BGI-Graphics-Project\Debug\Game.exe

@@ -73,5 +73,6 @@ namespace Game
 		primitives::Point centre;
 		std::vector<primitives::Rectangle> box_list;
 	};
+
 }
 

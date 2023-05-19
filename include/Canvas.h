@@ -25,10 +25,80 @@ public:
 
 		drawShape(rect);
 	}
+};
 
-	static void spawnPiece()
+
+
+class GameSpace
+{
+public:
+
+	GameSpace()
 	{
+		this->border = 10;
+		this->topLeft = primitives::Point(0, 0);
+		this->bottomRight = primitives::Point(getmaxx() / 2, getmaxy() / 2);
 
+		topWall.tL = primitives::Point(10, 10);
+		topWall.bR = primitives::Point(bottomRight.x + 10 , 20);
+
+		bottomWall.tL = primitives::Point(10, bottomRight.y);
+		bottomWall.bR = primitives::Point(bottomRight.x + 10, bottomRight.y + 10);
+
+		leftWall.tL = primitives::Point(10, 20);
+		leftWall.bR = primitives::Point(20, bottomRight.y);
+
+		rightWall.tL = primitives::Point(bottomRight.x, 20);
+		rightWall.bR = primitives::Point(bottomRight.x + 10, bottomRight.y);
 	}
+
+	GameSpace(primitives::Point tL, primitives::Point bR)
+	{
+		this->border = 10;
+		this->topLeft = tL;
+		this->bottomRight = bR;
+
+		topWall.tL = primitives::Point(10, 10);
+		topWall.bR = primitives::Point(bottomRight.x + 10, 20);
+
+		bottomWall.tL = primitives::Point(10, bottomRight.y);
+		bottomWall.bR = primitives::Point(bottomRight.x + 10, bottomRight.y + 10);
+
+		leftWall.tL = primitives::Point(10, 20);
+		leftWall.bR = primitives::Point(20, bottomRight.y);
+
+		rightWall.tL = primitives::Point(bottomRight.x, 20);
+		rightWall.bR = primitives::Point(bottomRight.x + 10, bottomRight.y);
+	}
+
+	GameSpace(primitives::Point tL, primitives::Point bR, int n)
+	{
+		this->border = n;
+		this->topLeft = tL;
+		this->bottomRight = bR;
+
+		topWall.tL = primitives::Point(10, 10);
+		topWall.bR = primitives::Point(bottomRight.x + 10, 20);
+
+		bottomWall.tL = primitives::Point(10, bottomRight.y);
+		bottomWall.bR = primitives::Point(bottomRight.x + 10, bottomRight.y + 10);
+
+		leftWall.tL = primitives::Point(10, 20);
+		leftWall.bR = primitives::Point(20, bottomRight.y);
+
+		rightWall.tL = primitives::Point(bottomRight.x, 20);
+		rightWall.bR = primitives::Point(bottomRight.x + 10, bottomRight.y);
+	}
+
+	void drawGameSpace();
+
+private:
+	int border;
+	primitives::Point topLeft;
+	primitives::Point bottomRight;
+	primitives::Rectangle topWall; 
+	primitives::Rectangle leftWall;
+	primitives::Rectangle rightWall;
+	primitives::Rectangle bottomWall;
 };
 
