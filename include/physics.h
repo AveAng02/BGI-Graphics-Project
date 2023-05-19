@@ -7,6 +7,7 @@
 #include <cmath>
 #include "primitives.h"
 #include "assets.h"
+#include <Pieces.h>
 
 namespace primitives
 {
@@ -46,6 +47,8 @@ namespace primitives
 	bool collideBowScreen(const Bow &, const Bow &, Point &, Point &, Point &, const int &, const int &, Acceleration &, const double &, double &);
 	bool collideCircleScreenPong(Circle &, AABB &, const AABB &, const double &, const int &, const int &, Point &, Point &, Acceleration &, double &);
 
+	bool rect2rectCollision(primitives::Rectangle&, primitives::Rectangle&);
+	bool P2PCollision(Game::Pieces&, Game::Pieces&);
 }
 
 inline double getEuclideanDistance(const int &x1, const int &y1, const int &x2, const int &y2)

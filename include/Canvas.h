@@ -2,6 +2,7 @@
 
 #include "graphics.h"
 #include "primitives.h"
+#include <Pieces.h>
 
 
 class Canvas
@@ -12,7 +13,7 @@ public:
 		rectangle(rect.tL.x, rect.tL.y, rect.bR.x, rect.bR.y);
 	}
 
-	static void moveShape(primitives::Rectangle rect, int x, int y)
+	static void moveShape(primitives::Rectangle& rect, int x, int y)
 	{
 		// rectangle(rect.tL.x + x, rect.tL.y + y, rect.bR.x + x, rect.bR.y + y);
 		rect.tL.x += x;
@@ -23,6 +24,11 @@ public:
 		rect.center.y += y;
 
 		drawShape(rect);
+	}
+
+	static void spawnPiece()
+	{
+
 	}
 };
 

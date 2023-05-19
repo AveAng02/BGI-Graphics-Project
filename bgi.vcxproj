@@ -61,6 +61,7 @@
     <ClInclude Include="include\Canvas.h" />
     <ClInclude Include="include\colors.h" />
     <ClInclude Include="include\fx.h" />
+    <ClInclude Include="include\InputParser.h" />
     <ClInclude Include="include\leaderboard.h" />
     <ClInclude Include="include\matrix.h" />
     <ClInclude Include="include\physics.h" />

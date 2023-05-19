@@ -1,8 +1,11 @@
 
 #include <iostream>
+#include <vector>
 #include <graphics.h>
 #include <Primitives.h>
+#include <InputParser.h>
 #include <Pieces.h>
+#include <physics.h>
 
 
 
@@ -10,12 +13,14 @@ int main()
 {
 	initwindow(1440, 811, "Tetris");
 
-	int move = 0;
 	int seed = 1;
 	int centre_x = getmaxx() / 2;
 	int centre_y = getmaxy() / 2;
 
+	std::vector<Game::Pieces> piece_list;
+
 	Game::Pieces p1(seed, centre_x, centre_y);
+	Game::Pieces p2(seed, centre_x / 2, centre_y / 2);
 
 	int x_pos = 0;
 	int y_pos = 0;
@@ -25,46 +30,18 @@ int main()
 	// Main game loop
 	while (true)
 	{
-		p1.move_piece(x_pos, y_pos);
+		p2.draw_piece();
+		p1.draw_piece();
 
-		move = getch();
-
-		if (move == 13)
+		if(primitives::P2PCollision(p1, p2))
 		{
-			p1 = Game::Pieces((std::rand() % 7 + 1), centre_x, centre_y);
-
-			p1.draw_piece();
+			std::cout << "Collision!" << std::endl;
 		}
-
-		if (move == 82 || move == 114)
+		else
 		{
-			p1.reotatePieceClock();
+			Game::parseInput(p1, getch());
 		}
-
-		if (move == 75)
-		{
-			// move right
-			x_pos -= 5;
-		}
-
-		if (move == 77)
-		{
-			// move left
-			x_pos += 5;
-		}
-
-		if (move == 72)
-		{
-			// move up
-			y_pos -= 5;
-		}
-
-		if (move == 80)
-		{
-			// move down
-			y_pos += 5;
-		}
-
+		
 		cleardevice();
 	}
 	

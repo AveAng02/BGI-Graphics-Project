@@ -49,3 +49,10 @@ Temporary Items
 *.db
 *.opendb
 *.ipch
+*.obj
+*.tlog
+*.exe
+*.ilk
+*.pdb
+*.idb
+*.db-shm

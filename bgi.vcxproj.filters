@@ -139,5 +139,8 @@
     <ClInclude Include="include\Canvas.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\InputParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

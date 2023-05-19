@@ -262,6 +262,18 @@ namespace Game
 			box_list[i].bR.x = box_list[i].center.x + (box_list[i].height / 2);
 			box_list[i].bR.y = box_list[i].center.y + (box_list[i].width / 2);
 		}
+
+		this->draw_piece();
+	}
+
+	primitives::Point Pieces::get_top_left() const
+	{
+		return topLeft;
+	}
+
+	primitives::Point Pieces::get_bottom_right() const
+	{
+		return bottomRight;
 	}
 }
 

@@ -56,6 +56,10 @@ namespace Game
 
 		primitives::Point get_centre() const;
 
+		primitives::Point get_top_left() const;
+
+		primitives::Point get_bottom_right() const;
+
 		std::vector<primitives::Rectangle> get_box_list() const;
 
 		void reotatePieceClock();
@@ -64,6 +68,8 @@ namespace Game
 
 		void get_random_piece(int seed, int x, int y);
 
+		primitives::Point topLeft;
+		primitives::Point bottomRight;
 		primitives::Point centre;
 		std::vector<primitives::Rectangle> box_list;
 	};
