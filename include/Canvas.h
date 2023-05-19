@@ -3,29 +3,7 @@
 #include "graphics.h"
 #include "primitives.h"
 #include <Pieces.h>
-
-
-class Canvas
-{
-public:
-	static void drawShape(primitives::Rectangle rect)
-	{
-		rectangle(rect.tL.x, rect.tL.y, rect.bR.x, rect.bR.y);
-	}
-
-	static void moveShape(primitives::Rectangle& rect, int x, int y)
-	{
-		// rectangle(rect.tL.x + x, rect.tL.y + y, rect.bR.x + x, rect.bR.y + y);
-		rect.tL.x += x;
-		rect.tL.y += y;
-		rect.bR.x += x;
-		rect.bR.y += y;
-		rect.center.x += x;
-		rect.center.y += y;
-
-		drawShape(rect);
-	}
-};
+#include <physics.h>
 
 
 
@@ -50,6 +28,18 @@ public:
 
 		rightWall.tL = primitives::Point(bottomRight.x, 20);
 		rightWall.bR = primitives::Point(bottomRight.x + 10, bottomRight.y);
+
+		topWall.height = 10;
+		topWall.width = abs(topWall.tL.x - topWall.bR.x);
+
+		bottomWall.height = 10;
+		bottomWall.width = abs(bottomWall.tL.x - bottomWall.bR.x);
+
+		leftWall.width = abs(leftWall.tL.y - leftWall.bR.y);
+		leftWall.width = 10;
+
+		rightWall.width = abs(rightWall.tL.y - rightWall.bR.y);
+		rightWall.width = 10;
 	}
 
 	GameSpace(primitives::Point tL, primitives::Point bR)
@@ -69,6 +59,18 @@ public:
 
 		rightWall.tL = primitives::Point(bottomRight.x, 20);
 		rightWall.bR = primitives::Point(bottomRight.x + 10, bottomRight.y);
+
+		topWall.height = 10;
+		topWall.width = abs(topWall.tL.x - topWall.bR.x);
+
+		bottomWall.height = 10;
+		bottomWall.width = abs(bottomWall.tL.x - bottomWall.bR.x);
+
+		leftWall.width = abs(leftWall.tL.y - leftWall.bR.y);
+		leftWall.width = 10;
+
+		rightWall.width = abs(rightWall.tL.y - rightWall.bR.y);
+		rightWall.width = 10;
 	}
 
 	GameSpace(primitives::Point tL, primitives::Point bR, int n)
@@ -88,9 +90,28 @@ public:
 
 		rightWall.tL = primitives::Point(bottomRight.x, 20);
 		rightWall.bR = primitives::Point(bottomRight.x + 10, bottomRight.y);
+
+		topWall.height = 10;
+		topWall.width = abs(topWall.tL.x - topWall.bR.x);
+
+		bottomWall.height = 10;
+		bottomWall.width = abs(bottomWall.tL.x - bottomWall.bR.x);
+
+		leftWall.width = abs(leftWall.tL.y - leftWall.bR.y);
+		leftWall.width = 10;
+
+		rightWall.width = abs(rightWall.tL.y - rightWall.bR.y);
+		rightWall.width = 10;
 	}
 
-	void drawGameSpace();
+	void drawGameSpace() const;
+
+	bool collidesWithBottom(const Game::Pieces&) const;
+
+	bool collidesWithRight(const Game::Pieces&) const;
+
+	bool collidesWithLeft(const Game::Pieces&) const;
+
 
 private:
 	int border;

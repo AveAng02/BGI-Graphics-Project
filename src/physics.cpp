@@ -423,7 +423,25 @@ if (((circleBB.topRight.x <= rectangleBB.bottomLeft.x + 2) && (circleBB.topRight
 		}
 	}
 
-	bool rect2rectCollision(primitives::Rectangle& r1, primitives::Rectangle& r2)
+	void drawShape(primitives::Rectangle rect)
+	{
+		rectangle(rect.tL.x, rect.tL.y, rect.bR.x, rect.bR.y);
+	}
+
+	void moveShape(primitives::Rectangle& rect, int x, int y)
+	{
+		// rectangle(rect.tL.x + x, rect.tL.y + y, rect.bR.x + x, rect.bR.y + y);
+		rect.tL.x += x;
+		rect.tL.y += y;
+		rect.bR.x += x;
+		rect.bR.y += y;
+		rect.center.x += x;
+		rect.center.y += y;
+
+		drawShape(rect);
+	}
+
+	bool rect2rectCollision(primitives::Rectangle r1, primitives::Rectangle r2)
 	{
 		int tLwidth = abs(r1.tL.x - r2.tL.x);
 		int tLheight = abs(r1.tL.y - r2.tL.y);
@@ -434,28 +452,6 @@ if (((circleBB.topRight.x <= rectangleBB.bottomLeft.x + 2) && (circleBB.topRight
 		if (tLwidth <= (r1.width + 1) && bRwidth <= (r1.width + 1) && tLheight <= (r1.height + 1) && bRheight <= (r1.height + 1))
 		{
 			return true;
-		}
-
-		return false;
-	}
-
-	bool P2PCollision(Game::Pieces& p1, Game::Pieces& p2)
-	{
-		// First check if the bounding boxes collide
-
-
-		// Check if each rectangle from p1
-		// against each rectangle from p2
-
-		for (int j = 0, i = 0; i < p1.get_box_list().size(); i++)
-		{
-			for (j = 0; j < p2.get_box_list().size(); j++)
-			{
-				if (rect2rectCollision(p1.get_box_list()[i], p2.get_box_list()[j]))
-				{
-					return true;
-				}
-			}
 		}
 
 		return false;

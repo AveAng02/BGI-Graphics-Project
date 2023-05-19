@@ -3,7 +3,7 @@
 #include <iostream>
 #include <graphics.h>
 #include <primitives.h>
-#include <Canvas.h>
+#include <physics.h>
 #include <vector>
 
 
@@ -17,7 +17,7 @@ namespace Game
 		{
 			int seed = std::rand() % 7 + 1;
 
-			get_random_piece(seed, 0, 0);
+			*this = get_random_piece(seed, 0, 0);
 
 			centre.x = 0;
 			centre.y = 0;
@@ -27,7 +27,7 @@ namespace Game
 		{
 			int seed = std::rand() % 7 + 1;
 
-			get_random_piece(seed, x_, y_);
+			*this = get_random_piece(seed, x_, y_);
 
 			centre.x = x_;
 			centre.y = y_;
@@ -35,10 +35,23 @@ namespace Game
 
 		Pieces(int seed, int x_, int y_)
 		{
-			get_random_piece(seed % 8, x_, y_);
+			*this = get_random_piece(seed % 8, x_, y_);
 
 			centre.x = x_;
 			centre.y = y_;
+		}
+
+		Pieces(std::string name_,
+		primitives::Point topLeft_,
+		primitives::Point bottomRight_,
+		primitives::Point centre_,
+		std::vector<primitives::Rectangle> box_list_)
+		{
+			this->name = name_;
+			this->topLeft = topLeft_;
+			this->bottomRight = bottomRight_;
+			this->centre = centre_;
+			this->box_list = box_list_;
 		}
 
 		Pieces operator=(const Pieces& p2) 
@@ -52,22 +65,32 @@ namespace Game
 
 		void draw_piece();
 
-		void move_piece(int x, int y);
-
 		primitives::Point get_centre() const;
 
 		primitives::Point get_top_left() const;
 
 		primitives::Point get_bottom_right() const;
 
+		void get_centre(const primitives::Point);
+
+		void get_top_left(const primitives::Point);
+
+		void get_bottom_right(const primitives::Point);
+
+		void move_piece(int x, int y);
+
 		std::vector<primitives::Rectangle> get_box_list() const;
 
-		void reotatePieceClock();
+		bool P2PCollision(std::vector<Game::Pieces>&);
+
+		void rotatePieceClock();
+
+		void printPiece();
+
+		Pieces get_random_piece(int seed, int x, int y);
 
 	private:
-
-		void get_random_piece(int seed, int x, int y);
-
+		std::string name;
 		primitives::Point topLeft;
 		primitives::Point bottomRight;
 		primitives::Point centre;

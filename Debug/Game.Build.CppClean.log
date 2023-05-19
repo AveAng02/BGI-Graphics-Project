@@ -1,12 +1,14 @@
 c:\zdrive_1\github\bgi-graphics-project\debug\vc142.pdb
 c:\zdrive_1\github\bgi-graphics-project\debug\vc142.idb
 c:\zdrive_1\github\bgi-graphics-project\debug\vector.obj
+c:\zdrive_1\github\bgi-graphics-project\debug\pieces.obj
 c:\zdrive_1\github\bgi-graphics-project\debug\physics.obj
 c:\zdrive_1\github\bgi-graphics-project\debug\matrix.obj
 c:\zdrive_1\github\bgi-graphics-project\debug\leaderboard.obj
 c:\zdrive_1\github\bgi-graphics-project\debug\fx.obj
 c:\zdrive_1\github\bgi-graphics-project\debug\canvas.obj
 c:\zdrive_1\github\bgi-graphics-project\debug\assets.obj
+c:\zdrive_1\github\bgi-graphics-project\debug\tetris.obj
 c:\zdrive_1\github\bgi-graphics-project\debug\winthread.obj
 c:\zdrive_1\github\bgi-graphics-project\debug\winbgi.obj
 c:\zdrive_1\github\bgi-graphics-project\debug\text.obj
@@ -18,6 +20,12 @@ c:\zdrive_1\github\bgi-graphics-project\debug\file.obj
 c:\zdrive_1\github\bgi-graphics-project\debug\drawing.obj
 c:\zdrive_1\github\bgi-graphics-project\debug\dibutil.obj
 c:\zdrive_1\github\bgi-graphics-project\debug\bgiout.obj
+c:\zdrive_1\github\bgi-graphics-project\debug\game.exe
+c:\zdrive_1\github\bgi-graphics-project\debug\game.ilk
+c:\zdrive_1\github\bgi-graphics-project\debug\game.pdb
 c:\zdrive_1\github\bgi-graphics-project\debug\game.tlog\cl.command.1.tlog
 c:\zdrive_1\github\bgi-graphics-project\debug\game.tlog\cl.read.1.tlog
 c:\zdrive_1\github\bgi-graphics-project\debug\game.tlog\cl.write.1.tlog
+c:\zdrive_1\github\bgi-graphics-project\debug\game.tlog\link.command.1.tlog
+c:\zdrive_1\github\bgi-graphics-project\debug\game.tlog\link.read.1.tlog
+c:\zdrive_1\github\bgi-graphics-project\debug\game.tlog\link.write.1.tlog
